@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
+	<classpathentry kind="lib" path="/System/Library/Java/Extensions/MRJToolkit.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar"/>
+	<classpathentry kind="lib" path="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/j2ee.jar"/>
+	<classpathentry kind="lib" path="/Users/Ravikiran/Documents/workspace/simpleEDS/SimpleEDS/WebContent/WEB-INF/lib/navigatorAPI.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
