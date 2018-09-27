@@ -206,20 +206,6 @@ public class TestICN extends Plugin {
 	}
 
 	/**
-	 * Provides a list of services that are provided by this plug-in. The
-	 * services run on the web server, and can be called by the web browser
-	 * logic component of the plug-in.
-	 * 
-	 * @return An array of {@link com.ibm.ecm.extension.PluginService
-	 *         PluginService} objects. The plug-in should return the same set of
-	 *         objects on every call. If there are no services defined by the
-	 *         plug-in, the call should return an empty array.
-	 */
-	public PluginService[] getServices() {
-		return new PluginService[0];
-	}
-
-	/**
 	 * Provides a custom service used for Content Manager OnDemand single
 	 * sign-on (SSO). This is an optional service that will be called when SSO
 	 * is enabled on a Content Manager OnDemand server. The result of the
@@ -274,26 +260,6 @@ public class TestICN extends Plugin {
 	}
 
 	/**
-	 * Specifies custom features that are provided by this plug-in. Features are the major user interface sections,
-	 * which appear as icons on the left side of the user interface in the default layout. Examples of features include
-	 * Search, Favorites, and Teamspaces.
-	 * 
-	 * @return An array of custom plug-in feature objects.
-	 */
-	public PluginFeature[] getFeatures() {
-		return new PluginFeature[0];
-	}
-
-	/**
-	 * Provides a list of new menu types defined by the plug-in.
-	 * 
-	 * @return An array of new menu type objects.
-	 */
-	public PluginMenuType[] getMenuTypes() {
-		return new PluginMenuType[0];
-	}
-
-	/**
 	 * Provides a list of menus defined by the plug-in.
 	 * 
 	 * @return An array of plug-in menu objects.
@@ -313,6 +279,41 @@ public class TestICN extends Plugin {
 		 */
 		public com.ibm.ecm.extension.PluginLayout[] getLayouts() {
 			return new com.ibm.ecm.extension.PluginLayout[] {new com.test.layout()};
+		}
+
+	/**
+	     * Specifies custom features that are provided by this plug-in. Features are
+	     * the major user interface sections, which appear as icons on the left side
+	     * of the user interface in the default layout. Examples of features include
+	     * Search, Favorites, and Teamspaces.
+	     * 
+	     * @return An array of custom plug-in feature objects.
+	     */
+	    public com.ibm.ecm.extension.PluginFeature[] getFeatures() {
+	       return new com.ibm.ecm.extension.PluginFeature[] {new com.test.TestFeature()};
+	    }
+
+	/**
+	 * Provides a list of services that are provided by this plug-in. The
+	 * services run on the web server, and can be called by the web browser
+	 * logic component of the plug-in.
+	 * 
+	 * @return An array of {@link com.ibm.ecm.extension.PluginService
+	 *         PluginService} objects. The plug-in should return the same set of
+	 *         objects on every call. If there are no services defined by the
+	 *         plug-in, the call should return an empty array.
+	 */
+	public com.ibm.ecm.extension.PluginService[] getServices() {
+		return new com.ibm.ecm.extension.PluginService[]{new com.test.Service1()};
+	}
+
+	/**
+		 * Provides a list of new menu types defined by the plug-in.
+		 * 
+		 * @return An array of new menu type objects.
+		 */
+		public com.ibm.ecm.extension.PluginMenuType[] getMenuTypes() {
+			return new com.ibm.ecm.extension.PluginMenuType[]{new com.test.MenuType()};
 		}
 	
 }
