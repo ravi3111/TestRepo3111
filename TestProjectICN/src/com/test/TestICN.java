@@ -274,17 +274,6 @@ public class TestICN extends Plugin {
 	}
 
 	/**
-	 * Specifies custom features that are provided by this plug-in. Features are the major user interface sections,
-	 * which appear as icons on the left side of the user interface in the default layout. Examples of features include
-	 * Search, Favorites, and Teamspaces.
-	 * 
-	 * @return An array of custom plug-in feature objects.
-	 */
-	public PluginFeature[] getFeatures() {
-		return new PluginFeature[0];
-	}
-
-	/**
 	 * Provides a list of new menu types defined by the plug-in.
 	 * 
 	 * @return An array of new menu type objects.
@@ -314,5 +303,17 @@ public class TestICN extends Plugin {
 		public com.ibm.ecm.extension.PluginLayout[] getLayouts() {
 			return new com.ibm.ecm.extension.PluginLayout[] {new com.test.layout()};
 		}
+
+	/**
+	     * Specifies custom features that are provided by this plug-in. Features are
+	     * the major user interface sections, which appear as icons on the left side
+	     * of the user interface in the default layout. Examples of features include
+	     * Search, Favorites, and Teamspaces.
+	     * 
+	     * @return An array of custom plug-in feature objects.
+	     */
+	    public com.ibm.ecm.extension.PluginFeature[] getFeatures() {
+	       return new com.ibm.ecm.extension.PluginFeature[] {new com.test.TestFeature()};
+	    }
 	
 }
